@@ -17,7 +17,7 @@ The system is decoupled into four distinct layers:
 
 ## Live Services
 - ***API Documentation:*** http://3.141.85.201/docs
-- ***Primary Endpoint:*** `http://3.141.85.201/disciplines`
+- ***Primary Endpoint:*** http://3.141.85.201/disciplines
 - ***Database:*** PostgreSQL on AWS RDS
 
 ---
