@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: carms_api_container
+    # Map port 8000 on your Mac to port 8000 in Docker
+    ports:
+      - "8000:8000"
+    volumes:
+      # This 'bind mount' means if you edit an .md file in /data, 
+      # the Docker container sees it instantly without a restart.
+      - .:/code
+    environment:
+      - PYTHONHASHSEED=random
+    restart: always

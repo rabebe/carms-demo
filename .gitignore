@@ -1,0 +1,53 @@
+# --- Environment & Credentials  ---
+.env
+.venv/
+env/
+venv/
+*.pem
+# Ignore AWS CLI local config
+.aws/
+
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Dagster Specific ---
+# Dagster creates a local directory for runs and event logs
+.dagster_home/
+storage/
+*.db
+*.sqlite
+# These are the specific temp folders you saw earlier
+.tmp_dagster_home*/
+
+# --- Data & OS Specific ---
+data/
+*.csv
+*.xlsx
+.DS_Store
+Thumbs.db
+
+# --- IDE Specific ---
+.vscode/
+.idea/
+*.swp
